@@ -51,13 +51,11 @@ dont_scan_files /EFI/ubuntu/mmx64.efi,shimx64.efi
 You can also change the icon used for a particular `.efi` file by placing a
 `.png` file of the same name in the directory with it:
 
-For instance, my `/EFI/BOOT` directory has the following files:
-
 ```bash
+$ ls /boot/EFI/BOOT
+
 BOOTX64.EFI BOOTX64.PNG
 ```
-
-The entry for `BOOTX64.EFI` will use `BOOTX64.PNG` as an icon.
 
 ## Additional Information
 
