@@ -43,7 +43,7 @@ dont_scan_dirs /EFI/BOOT,/EFI/old
 You can also exclude specific `.efi` files themselves by passing them to the 
 `dont_scan_files` token of the `refind.conf` file:
 
-```conf
+```bash
 # Exclude /EFI/ubuntu/mmx64.efi and any .efi file named shimx64.efi
 dont_scan_files /EFI/ubuntu/mmx64.efi,shimx64.efi
 ```
@@ -51,11 +51,14 @@ dont_scan_files /EFI/ubuntu/mmx64.efi,shimx64.efi
 You can also change the icon used for a particular `.efi` file by placing a
 `.png` file of the same name in the directory with it:
 
-```bash
-ls /boot/EFI/BOOT/
+For instance, my `/EFI/BOOT` directory has the following files:
 
-# BOOTX64.EFI BOOTX64.PNG
-# ^ the entry for BOOTX64.EFI will use BOOTX64.PNG as an icon
+```bash
+BOOTX64.EFI BOOTX64.PNG
 ```
 
-More detailed information about configuring rEFInd may be found [here](http://www.rodsbooks.com/refind/configfile.html).
+The entry for `BOOTX64.EFI` will use `BOOTX64.PNG` as an icon.
+
+## Additional Information
+
+Additional information about configuring rEFInd may be found [here](http://www.rodsbooks.com/refind/configfile.html).
