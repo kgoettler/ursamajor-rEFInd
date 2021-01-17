@@ -57,6 +57,17 @@ $ ls /boot/EFI/BOOT
 BOOTX64.EFI BOOTX64.PNG
 ```
 
+To change a background, run `set-background.sh`, for example:
+```bash
+$ chmod +x ./set-background.sh
+$ ./set-background.sh
+Available backgrounds (./backgrounds):
+  1) black.png
+  2) ursamajor.png
+Enter the number of background to set: 1
+Success: black.png has been set as background.
+```
+
 ## Additional Information
 
 Additional information about configuring rEFInd may be found [here](http://www.rodsbooks.com/refind/configfile.html).
